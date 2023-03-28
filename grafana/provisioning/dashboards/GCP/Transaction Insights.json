@@ -163,7 +163,7 @@
     },
     {
       "datasource": {
-        "uid": "${DS_PROMETHEUS}"
+        "uid": "Prometheus"
       },
       "description": "",
       "fieldConfig": {
@@ -250,7 +250,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DS_PROMETHEUS}"
+        "uid": "Prometheus"
       },
       "description": "",
       "fieldConfig": {
@@ -326,7 +326,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "Prometheus"
           },
           "exemplar": false,
           "expr": "database_spanner_txn_stats_total_ninety_nine_percentile_total_latency{project_id=~\"$project\",instance_id=~\"$instance\",database=~\"$database\"}",
@@ -341,7 +341,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DS_PROMETHEUS}"
+        "uid": "Prometheus"
       },
       "description": "",
       "fieldConfig": {
@@ -417,7 +417,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "Prometheus"
           },
           "exemplar": false,
           "expr": "database_spanner_txn_stats_total_ninety_five_percentile_total_latency{project_id=~\"$project\",instance_id=~\"$instance\",database=~\"$database\"}",
@@ -432,7 +432,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DS_PROMETHEUS}"
+        "uid": "Prometheus"
       },
       "description": "",
       "fieldConfig": {
@@ -508,7 +508,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "Prometheus"
           },
           "exemplar": false,
           "expr": "database_spanner_txn_stats_total_fifty_percentile_total_latency{project_id=~\"$project\",instance_id=~\"$instance\",database=~\"$database\"}",
@@ -522,7 +522,7 @@
     },
     {
       "datasource": {
-        "uid": "${DS_PROMETHEUS}"
+        "uid": "Prometheus"
       },
       "description": "",
       "fieldConfig": {
@@ -608,7 +608,7 @@
     },
     {
       "datasource": {
-        "uid": "${DS_PROMETHEUS}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -693,7 +693,7 @@
     },
     {
       "datasource": {
-        "uid": "${DS_PROMETHEUS}"
+        "uid": "Prometheus"
       },
       "description": "",
       "fieldConfig": {
@@ -779,7 +779,7 @@
     },
     {
       "datasource": {
-        "uid": "${DS_PROMETHEUS}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -864,7 +864,7 @@
     },
     {
       "datasource": {
-        "uid": "${DS_PROMETHEUS}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -949,7 +949,7 @@
     },
     {
       "datasource": {
-        "uid": "${DS_PROMETHEUS}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -1034,7 +1034,7 @@
     },
     {
       "datasource": {
-        "uid": "${DS_PROMETHEUS}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -1132,7 +1132,7 @@
     },
     {
       "datasource": {
-        "uid": "${DS_PROMETHEUS}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -1226,7 +1226,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DS_PROMETHEUS}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -1309,7 +1309,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "Prometheus"
           },
           "exemplar": false,
           "expr": "database_spanner_txn_stats_top_ninety_nine_percentile_total_latency{project_id=~\"$project\",instance_id=~\"$instance\",database=~\"$database\",fingerprint=~\"$txn_topn\"}",
@@ -1324,7 +1324,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DS_PROMETHEUS}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -1407,7 +1407,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "Prometheus"
           },
           "exemplar": false,
           "expr": "database_spanner_txn_stats_top_ninety_five_percentile_total_latency{project_id=~\"$project\",instance_id=~\"$instance\",database=~\"$database\",fingerprint=~\"$txn_topn\"}",
@@ -1422,7 +1422,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DS_PROMETHEUS}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -1505,7 +1505,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "Prometheus"
           },
           "exemplar": false,
           "expr": "database_spanner_txn_stats_top_fifty_percentile_total_latency{project_id=~\"$project\",instance_id=~\"$instance\",database=~\"$database\",fingerprint=~\"$txn_topn\"}",
@@ -1519,7 +1519,7 @@
     },
     {
       "datasource": {
-        "uid": "${DS_PROMETHEUS}"
+        "uid": "Prometheus"
       },
       "description": "",
       "fieldConfig": {
@@ -1613,7 +1613,7 @@
     },
     {
       "datasource": {
-        "uid": "${DS_PROMETHEUS}"
+        "uid": "Prometheus"
       },
       "description": "",
       "fieldConfig": {
@@ -1707,7 +1707,7 @@
     },
     {
       "datasource": {
-        "uid": "${DS_PROMETHEUS}"
+        "uid": "Prometheus"
       },
       "description": "",
       "fieldConfig": {
@@ -1801,7 +1801,7 @@
     },
     {
       "datasource": {
-        "uid": "${DS_PROMETHEUS}"
+        "uid": "Prometheus"
       },
       "description": "",
       "fieldConfig": {
@@ -1895,7 +1895,7 @@
     },
     {
       "datasource": {
-        "uid": "${DS_PROMETHEUS}"
+        "uid": "Prometheus"
       },
       "description": "",
       "fieldConfig": {
@@ -1989,7 +1989,7 @@
     },
     {
       "datasource": {
-        "uid": "${DS_PROMETHEUS}"
+        "uid": "Prometheus"
       },
       "description": "",
       "fieldConfig": {
@@ -2084,7 +2084,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DS_PROMETHEUS}"
+        "uid": "Prometheus"
       },
       "description": "",
       "fieldConfig": {
@@ -2179,7 +2179,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DS_PROMETHEUS}"
+        "uid": "Prometheus"
       },
       "description": "",
       "fieldConfig": {
@@ -3020,7 +3020,7 @@
         "current": {},
         "datasource": {
           "type": "prometheus",
-          "uid": "${DS_PROMETHEUS}"
+          "uid": "Prometheus"
         },
         "definition": "label_values(project_id)",
         "hide": 0,
@@ -3044,7 +3044,7 @@
         "current": {},
         "datasource": {
           "type": "prometheus",
-          "uid": "${DS_PROMETHEUS}"
+          "uid": "Prometheus"
         },
         "definition": "label_values(instance_id)",
         "hide": 0,
@@ -3068,7 +3068,7 @@
         "current": {},
         "datasource": {
           "type": "prometheus",
-          "uid": "${DS_PROMETHEUS}"
+          "uid": "Prometheus"
         },
         "definition": "label_values(database)",
         "hide": 0,
@@ -3092,7 +3092,7 @@
         "current": {},
         "datasource": {
           "type": "prometheus",
-          "uid": "${DS_PROMETHEUS}"
+          "uid": "Prometheus"
         },
         "definition": "query_result(topk(10, avg_over_time(database_spanner_txn_stats_top_avg_total_latency_seconds[${__range_s}s])))",
         "hide": 0,

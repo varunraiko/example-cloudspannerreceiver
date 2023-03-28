@@ -1,4 +1,41 @@
 {
+  "__inputs": [
+    {
+      "name": "DS_PROMETHEUS",
+      "label": "Prometheus",
+      "description": "",
+      "type": "datasource",
+      "pluginId": "prometheus",
+      "pluginName": "Prometheus"
+    }
+  ],
+  "__elements": [],
+  "__requires": [
+    {
+      "type": "grafana",
+      "id": "grafana",
+      "name": "Grafana",
+      "version": "8.3.1"
+    },
+    {
+      "type": "datasource",
+      "id": "prometheus",
+      "name": "Prometheus",
+      "version": "1.0.0"
+    },
+    {
+      "type": "panel",
+      "id": "table",
+      "name": "Table",
+      "version": ""
+    },
+    {
+      "type": "panel",
+      "id": "timeseries",
+      "name": "Time series",
+      "version": ""
+    }
+  ],
   "annotations": {
     "list": [
       {
@@ -18,13 +55,12 @@
       }
     ]
   },
-  "description": "Query details for single Query",
+  "description": "Query details dashboard",
   "editable": true,
   "fiscalYearStartMonth": 0,
-  "gnetId": null,
   "graphTooltip": 1,
-  "id": 13,
-  "iteration": 1638360237414,
+  "id": null,
+  "iteration": 1644345183172,
   "links": [
     {
       "asDropdown": false,
@@ -128,7 +164,9 @@
   "liveNow": false,
   "panels": [
     {
-      "datasource": "${pds}",
+      "datasource": {
+        "uid": "Prometheus"
+      },
       "description": "",
       "fieldConfig": {
         "defaults": {
@@ -212,12 +250,13 @@
           "refId": "A"
         }
       ],
-      "timeFrom": null,
       "title": "CPU Usage",
       "type": "timeseries"
     },
     {
-      "datasource": "${pds}",
+      "datasource": {
+        "uid": "Prometheus"
+      },
       "description": "",
       "fieldConfig": {
         "defaults": {
@@ -301,12 +340,13 @@
           "refId": "A"
         }
       ],
-      "timeFrom": null,
       "title": "Latency",
       "type": "timeseries"
     },
     {
-      "datasource": "${pds}",
+      "datasource": {
+        "uid": "Prometheus"
+      },
       "description": "",
       "fieldConfig": {
         "defaults": {
@@ -396,12 +436,13 @@
           "refId": "B"
         }
       ],
-      "timeFrom": null,
       "title": "Execution count / Failed",
       "type": "timeseries"
     },
     {
-      "datasource": "${pds}",
+      "datasource": {
+        "uid": "Prometheus"
+      },
       "description": "",
       "fieldConfig": {
         "defaults": {
@@ -491,12 +532,13 @@
           "refId": "B"
         }
       ],
-      "timeFrom": null,
       "title": "Rows scanned / Rows returned",
       "type": "timeseries"
     },
     {
-      "datasource": "${pds}",
+      "datasource": {
+        "uid": "Prometheus"
+      },
       "description": "",
       "fieldConfig": {
         "defaults": {
@@ -655,8 +697,7 @@
             },
             "properties": [
               {
-                "id": "custom.width",
-                "value": null
+                "id": "custom.width"
               }
             ]
           }
@@ -671,10 +712,17 @@
       "id": 31,
       "interval": "60s",
       "options": {
+        "footer": {
+          "fields": "",
+          "reducer": [
+            "sum"
+          ],
+          "show": false
+        },
         "showHeader": true,
         "sortBy": []
       },
-      "pluginVersion": "8.2.2",
+      "pluginVersion": "8.3.1",
       "targets": [
         {
           "exemplar": false,
@@ -717,7 +765,6 @@
           "refId": "D"
         }
       ],
-      "timeFrom": null,
       "title": "Summary",
       "transformations": [
         {
@@ -938,8 +985,7 @@
               "Rows scanned (last)": {
                 "aggregations": [
                   "mean"
-                ],
-                "operation": null
+                ]
               },
               "Rows scanned (mean)": {
                 "aggregations": [
@@ -1062,7 +1108,7 @@
     }
   ],
   "refresh": "1m",
-  "schemaVersion": 31,
+  "schemaVersion": 33,
   "style": "dark",
   "tags": [
     "query-details"
@@ -1070,9 +1116,12 @@
   "templating": {
     "list": [
       {
-        "allValue": null,
+        "current": {
+          "selected": false,
+          "text": "Prometheus",
+          "value": "Prometheus"
+        },
         "description": "Prometheus data source",
-        "error": null,
         "hide": 0,
         "includeAll": false,
         "label": "Prometheus",
@@ -1088,10 +1137,11 @@
       },
       {
         "allValue": ".*",
-        "datasource": "${pds}",
+        "current": {},
+        "datasource": {
+          "uid": "Prometheus"
+        },
         "definition": "label_values(project_id)",
-        "description": null,
-        "error": null,
         "hide": 0,
         "includeAll": false,
         "label": "Project",
@@ -1110,10 +1160,11 @@
       },
       {
         "allValue": ".*",
-        "datasource": "${pds}",
+        "current": {},
+        "datasource": {
+          "uid": "Prometheus"
+        },
         "definition": "label_values(instance_id)",
-        "description": null,
-        "error": null,
         "hide": 0,
         "includeAll": false,
         "label": "Instance",
@@ -1132,10 +1183,11 @@
       },
       {
         "allValue": ".*",
-        "datasource": "${pds}",
+        "current": {},
+        "datasource": {
+          "uid": "Prometheus"
+        },
         "definition": "label_values(database)",
-        "description": null,
-        "error": null,
         "hide": 0,
         "includeAll": false,
         "label": "Database",
@@ -1153,11 +1205,11 @@
         "type": "query"
       },
       {
-        "allValue": null,
-        "datasource": "${pds}",
+        "current": {},
+        "datasource": {
+          "uid": "Prometheus"
+        },
         "definition": "query_result(topk(10, avg_over_time(database_spanner_query_stats_top_avg_cpu_seconds[${__range_s}s])))",
-        "description": null,
-        "error": null,
         "hide": 0,
         "includeAll": false,
         "label": "Top 10 Queries",
@@ -1182,7 +1234,9 @@
   },
   "timepicker": {},
   "timezone": "",
-  "title": "Query details",
+  "title": "Google Cloud Spanner - Query details",
   "uid": "cRMUiFvny",
-  "version": 9
+  "version": 1,
+  "weekStart": "",
+  "gnetId": 15720
 }

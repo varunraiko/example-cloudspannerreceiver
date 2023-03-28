@@ -1,4 +1,35 @@
 {
+  "__inputs": [
+    {
+      "name": "DS_PROMETHEUS",
+      "label": "Prometheus",
+      "description": "",
+      "type": "datasource",
+      "pluginId": "prometheus",
+      "pluginName": "rometheus"
+    }
+  ],
+  "__elements": [],
+  "__requires": [
+    {
+      "type": "grafana",
+      "id": "grafana",
+      "name": "Grafana",
+      "version": "8.3.1"
+    },
+    {
+      "type": "datasource",
+      "id": "prometheus",
+      "name": "Prometheus",
+      "version": "1.0.0"
+    },
+    {
+      "type": "panel",
+      "id": "timeseries",
+      "name": "Time series",
+      "version": ""
+    }
+  ],
   "annotations": {
     "list": [
       {
@@ -20,10 +51,9 @@
   },
   "editable": true,
   "fiscalYearStartMonth": 0,
-  "gnetId": null,
   "graphTooltip": 1,
-  "id": 6,
-  "iteration": 1638950995336,
+  "id": null,
+  "iteration": 1644345566029,
   "links": [
     {
       "asDropdown": false,
@@ -113,7 +143,9 @@
   "liveNow": false,
   "panels": [
     {
-      "datasource": "${pds}",
+      "datasource": {
+        "uid": "Prometheus"
+      },
       "description": "",
       "fieldConfig": {
         "defaults": {
@@ -174,7 +206,6 @@
       },
       "id": 3,
       "interval": "1m",
-      "maxDataPoints": null,
       "options": {
         "legend": {
           "calcs": [],
@@ -202,7 +233,9 @@
       "type": "timeseries"
     },
     {
-      "datasource": "${pds}",
+      "datasource": {
+        "uid": "Prometheus"
+      },
       "description": "",
       "fieldConfig": {
         "defaults": {
@@ -263,7 +296,6 @@
       },
       "id": 4,
       "interval": "1m",
-      "maxDataPoints": null,
       "options": {
         "legend": {
           "calcs": [],
@@ -291,7 +323,9 @@
       "type": "timeseries"
     },
     {
-      "datasource": "${pds}",
+      "datasource": {
+        "uid": "Prometheus"
+      },
       "description": "",
       "fieldConfig": {
         "defaults": {
@@ -352,7 +386,6 @@
       },
       "id": 5,
       "interval": "1m",
-      "maxDataPoints": null,
       "options": {
         "legend": {
           "calcs": [],
@@ -380,7 +413,9 @@
       "type": "timeseries"
     },
     {
-      "datasource": "${pds}",
+      "datasource": {
+        "uid": "Prometheus"
+      },
       "description": "",
       "fieldConfig": {
         "defaults": {
@@ -469,7 +504,7 @@
     }
   ],
   "refresh": "1m",
-  "schemaVersion": 31,
+  "schemaVersion": 33,
   "style": "dark",
   "tags": [
     "active-queries-summary"
@@ -477,9 +512,12 @@
   "templating": {
     "list": [
       {
-        "allValue": null,
+        "current": {
+          "selected": false,
+          "text": "Prometheus",
+          "value": "Prometheus"
+        },
         "description": "Prometheus data source",
-        "error": null,
         "hide": 0,
         "includeAll": false,
         "label": "Prometheus",
@@ -495,10 +533,11 @@
       },
       {
         "allValue": ".*",
-        "datasource": "${pds}",
+        "current": {},
+        "datasource": {
+          "uid": "Prometheus"
+        },
         "definition": "label_values(project_id)",
-        "description": null,
-        "error": null,
         "hide": 0,
         "includeAll": false,
         "label": "Project",
@@ -517,10 +556,11 @@
       },
       {
         "allValue": ".*",
-        "datasource": "${pds}",
+        "current": {},
+        "datasource": {
+          "uid": "Prometheus"
+        },
         "definition": "label_values(instance_id)",
-        "description": null,
-        "error": null,
         "hide": 0,
         "includeAll": false,
         "label": "Instance",
@@ -539,10 +579,11 @@
       },
       {
         "allValue": ".*",
-        "datasource": "${pds}",
+        "current": {},
+        "datasource": {
+          "uid": "Prometheus"
+        },
         "definition": "label_values(database)",
-        "description": null,
-        "error": null,
         "hide": 0,
         "includeAll": true,
         "label": "Database",
@@ -567,7 +608,10 @@
   },
   "timepicker": {},
   "timezone": "",
-  "title": "Active Queries Summary",
+  "title": "Google Cloud Spanner - Active Queries Summary",
   "uid": "p4nebuZnz",
-  "version": 3
+  "version": 1,
+  "weekStart": "",
+  "gnetId": 15723,
+  "description": "Active Queries Summary dashboard"
 }
